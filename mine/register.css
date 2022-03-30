@@ -39,7 +39,7 @@ form .user-details .input-box{
   width: calc(100% / 2 - 20px);
 }
 
-.user-details .input-box input{
+.user-details .input-box input, select{
   height: 45px;
   width: 100%;
   outline: none;
@@ -50,9 +50,15 @@ form .user-details .input-box{
   border-bottom-width: 2px;
   transition: all 0.3s ease;
 }
-.user-details .input-box input:focus,
-.user-details .input-box input:valid{
+
+/*###############CHANGED###############e*/
+.user-details .input-box input:focus{
   border-color: #9b59b6;
+  
+}
+#gendert:focus{
+   border: 1px solid #9b59b6;
+
 }
 .hide{
   color:red;
@@ -61,22 +67,26 @@ form .user-details .input-box{
  #gender{
     height: 45px;
   width: 100%;
-  outline: none;
+  /*outline: none;*/
   font-size: 16px;
   border-radius: 5px;
   padding-left: 15px;
-  border: 1px solid #ccc;
+  border: 2px solid #ccc;
   border-bottom-width: 2px;
   transition: all 0.3s ease;
 }
 
-  form button{
+ .container .content  .btn{
+    border:none;
     height: 50px;
     width: 100%;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    text-align-:center;
     color: #fff;
     background: #71b7e6;
     border-radius: 5px;
-    border: none;
     font-size: 20px;
     margin-bottom: 10px;
     cursor: pointer;
@@ -85,11 +95,17 @@ form .user-details .input-box{
     
   }
 
-  button:hover{ 
+  .conatainer .content .btn:hover{ 
     opacity: 0.8;
     background-color: green;
-   border: green;
+    border: green;
  }
+
+#btn:hover{ 
+    background-color: green;
+    border: green;
+ }
+/*##########CHANGED CENTER ############*/
 .login-signup{
-  margin-left: 30%;
+  text-align:center;
 }
